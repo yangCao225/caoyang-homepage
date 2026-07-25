@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="曹阳 — 湘潭大学环境工程专业。研究方向：人工智能、机器学习、智能环境监测、多模态可信AI。" />
-  <meta name="keywords" content="曹阳,湘潭大学,环境工程,人工智能,机器学习,智能环境监测,多模态,可信AI,数字孪生" />
-  <meta name="author" content="曹阳" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Yang Cao — Undergraduate Researcher in Trustworthy AI, Environmental Intelligence, and Robust Machine Learning at Xiangtan University." />
+  <meta name="keywords" content="Yang Cao,Trustworthy AI,Robust ML,Environmental Intelligence,Multimodal Learning,Xiangtan University" />
+  <meta name="author" content="Yang Cao" />
 
-  <meta property="og:title" content="曹阳 · 湘潭大学 · 环境工程" />
-  <meta property="og:description" content="Research Interests: AI, ML, Intelligent Environmental Monitoring, Multimodal Trustworthy AI" />
+  <meta property="og:title" content="Yang Cao — Trustworthy AI & Environmental Intelligence" />
+  <meta property="og:description" content="Undergraduate Researcher at Xiangtan University. Building reliable and sustainable intelligent systems." />
   <meta property="og:type" content="website" />
-  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:locale" content="en_US" />
 
-  <title>曹阳 — 湘潭大学 · 环境工程</title>
+  <title>Yang Cao — Trustworthy AI · Environmental Intelligence</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>" />
 
   <style>
@@ -49,12 +49,12 @@
       opacity: 0.35;
     }
 
-    /* Identity */
+    /* ===== Identity ===== */
     .identity {
       display: flex;
       align-items: flex-start;
       gap: 28px;
-      margin-bottom: 18px;
+      margin-bottom: 12px;
     }
     .identity-photo {
       width: 130px;
@@ -71,98 +71,100 @@
       margin-left: auto;
       align-self: center;
     }
-    .identity-info h1 { font-size: 28px; margin-bottom: 4px; }
-    .identity-info .name-en {
+    .identity-info h1 { font-size: 28px; margin-bottom: 2px; }
+    .identity-info .tagline {
       font-family: Georgia, "Times New Roman", serif;
-      font-size: 17px;
-      color: #444;
-      margin-bottom: 10px;
+      font-size: 15px;
+      color: #003399;
+      font-weight: 600;
+      margin-bottom: 8px;
+      line-height: 1.5;
     }
-    .identity-info .title   { font-size: 14px; margin-bottom: 4px; }
-    .identity-info .dept    { font-size: 14px; color: #333; margin-bottom: 4px; }
-    .identity-info .univ    { font-size: 14px; color: #003399; font-weight: 600; }
+    .identity-info .affiliation {
+      font-size: 14px;
+      color: #444;
+      margin-bottom: 2px;
+    }
+    .identity-info .dept {
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 2px;
+    }
 
-    /* Contact line */
-    .contact-line {
+    /* ===== Quick Links ===== */
+    .quick-links {
       display: flex;
       flex-wrap: wrap;
-      gap: 6px 32px;
+      gap: 10px 24px;
       font-size: 13px;
       line-height: 1.9;
+      margin-bottom: 4px;
     }
-    .contact-line .label { font-weight: 600; }
+    .quick-links .label { font-weight: 600; }
 
-    /* Section */
+    /* ===== Section ===== */
     .section { margin-bottom: 6px; }
     .section p  { font-size: 14px; line-height: 1.7; margin-bottom: 6px; }
     .section ul { list-style: disc; padding-left: 22px; margin-bottom: 8px; }
     .section li { margin-bottom: 4px; line-height: 1.65; }
 
-    /* Research interest categories */
-    .ri-cat {
-      font-weight: 600;
-      margin-top: 8px;
-      margin-bottom: 2px;
-    }
-    .ri-sub {
-      margin-left: 16px;
-      margin-bottom: 4px;
-      color: #222;
-    }
+    /* ===== Research Interests ===== */
+    .ri-block { margin-bottom: 12px; }
+    .ri-block h3 { font-size: 15px; margin-bottom: 4px; }
+    .ri-block p  { font-size: 14px; color: #333; margin-bottom: 2px; }
 
-    /* Publication */
+    /* ===== Publication ===== */
     .pub-item {
-      margin-bottom: 10px;
-      padding-left: 24px;
-      text-indent: -24px;
+      margin-bottom: 14px;
       line-height: 1.65;
     }
-    .pub-item .idx   { font-weight: 600; }
-    .pub-item .title { font-weight: 600; }
-    .pub-item .venue { font-style: italic; color: #333; }
-    .pub-item .year  { color: #555; }
+    .pub-item .pub-author { font-weight: 600; }
+    .pub-item .pub-title  { font-weight: 600; font-style: italic; }
+    .pub-item .pub-venue  { color: #333; }
+    .pub-item .pub-links  { font-size: 12px; margin-top: 2px; }
+    .pub-item .pub-links a { margin-right: 10px; }
 
-    /* Project */
+    /* ===== Project ===== */
     .project {
-      margin-bottom: 22px;
+      margin-bottom: 18px;
       padding-left: 16px;
       border-left: 2px solid #003399;
     }
-    .project h3 { font-size: 15px; margin-bottom: 6px; }
-    .project .proj-en {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 13px;
-      color: #444;
-      margin-bottom: 8px;
-      font-style: italic;
-    }
+    .project h3 { font-size: 15px; margin-bottom: 2px; }
     .project .proj-meta {
       font-size: 13px;
       color: #555;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
-    .project .proj-label {
+    .project .proj-question {
+      font-style: italic;
+      color: #444;
+      margin-bottom: 4px;
+    }
+
+    /* ===== News ===== */
+    .news-item {
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+    .news-item .news-date {
       font-weight: 600;
-      font-size: 13px;
-      margin-top: 8px;
-      margin-bottom: 2px;
-    }
-    .project .highlight {
-      background: #f5f5dc;
-      padding: 2px 6px;
-      font-size: 13px;
+      font-family: Georgia, "Times New Roman", serif;
+      margin-right: 8px;
     }
 
-    /* Skills */
-    .skill-block { margin-bottom: 10px; }
-    .skill-block .skill-title { font-weight: 600; }
-    .skill-list { color: #222; }
-
-    /* Footer */
+    /* ===== Footer ===== */
     .footer { margin-top: 28px; font-size: 12px; color: #777; }
     .footer .update { font-style: italic; }
+    .footer .gold-line {
+      margin-top: 16px;
+      font-style: italic;
+      color: #444;
+      text-align: center;
+      font-size: 13px;
+    }
 
-    /* Responsive */
+    /* ===== Responsive ===== */
     @media (max-width: 640px) {
       body { padding: 14px 14px 36px; }
       .identity { flex-direction: column; align-items: center; text-align: center; gap: 14px; }
@@ -171,7 +173,7 @@
       .identity-info h1 { font-size: 23px; }
       h1 { font-size: 21px; }
       h2 { font-size: 17px; }
-      .contact-line { flex-direction: column; gap: 1px; }
+      .quick-links { flex-direction: column; gap: 1px; }
       .project { padding-left: 10px; }
     }
 
@@ -185,24 +187,42 @@
 
   <!-- ===== Identity ===== -->
   <div class="identity">
-    <img class="identity-photo" src="证件照.jpg" alt="曹阳" width="130" height="170" />
+    <img class="identity-photo" src="证件照.jpg" alt="Yang Cao" width="130" height="170" />
     <div class="identity-info">
-      <h1>曹阳</h1>
-      <p class="name-en">Yang Cao</p>
-      <p class="title">本科生</p>
-      <p class="dept">环境系</p>
-      <p class="univ">湘潭大学</p>
+      <h1>Yang Cao &nbsp;<span style="font-size:16px;font-weight:400;color:#555;">曹阳</span></h1>
+      <p class="tagline">Undergraduate Researcher in Trustworthy AI, Environmental Intelligence, and Robust Machine Learning</p>
+      <p class="affiliation">Department of Environmental Engineering</p>
+      <p class="dept">Xiangtan University</p>
     </div>
-    <img class="identity-logo" src="emblem.png" alt="湘潭大学" />
+    <img class="identity-logo" src="emblem.png" alt="Xiangtan University" />
   </div>
 
   <hr />
 
-  <!-- ===== Contact ===== -->
-  <div class="contact-line">
-    <span><span class="label">Correspondence:</span> 湘潭大学环境系</span>
+  <!-- ===== Quick Links ===== -->
+  <div class="quick-links">
     <span><span class="label">Email:</span> <a href="mailto:17663231569@163.com">17663231569@163.com</a></span>
-    <span><span class="label">Tel:</span> 17663231569</span>
+    <span><span class="label">CV:</span> <a href="#">PDF</a></span>
+    <span><span class="label">GitHub:</span> <a href="#">github.com/yangcao</a></span>
+    <span><span class="label">Google Scholar:</span> <a href="#">Scholar</a></span>
+  </div>
+
+  <hr />
+
+  <!-- ===== About ===== -->
+  <div class="section">
+    <h2>About</h2>
+    <p>I am an undergraduate researcher at <strong>Xiangtan University</strong> working on trustworthy artificial intelligence, with interests in robust machine learning, multimodal reliability, and AI-enabled environmental systems. My research aims to build intelligent systems that remain reliable under uncertainty — whether from missing sensor observations, semantic mismatches between modalities, or scarce experimental data.</p>
+  </div>
+
+  <hr />
+
+  <!-- ===== News ===== -->
+  <div class="section">
+    <h2>News</h2>
+    <div class="news-item"><span class="news-date">2025.09</span> Submitted paper on multimodal mismatch rejection with independent admission gates.</div>
+    <div class="news-item"><span class="news-date">2025.06</span> Completed Digital Twin decision-support framework for resilient air-quality monitoring.</div>
+    <div class="news-item"><span class="news-date">2025.03</span> Started research on trustworthy multimodal AI under semantic uncertainty.</div>
   </div>
 
   <hr />
@@ -210,16 +230,21 @@
   <!-- ===== Research Interests ===== -->
   <div class="section">
     <h2>Research Interests</h2>
-    <p>围绕<strong>人工智能、机器学习、智能环境监测、多模态学习与可信人工智能</strong>开展科研工作，关注复杂环境与开放场景下智能模型的鲁棒性、可靠性与决策能力。</p>
 
-    <p class="ri-cat">机器学习与深度学习</p>
-    <p class="ri-sub">时空预测模型 · 图神经网络 · 鲁棒学习与故障容错学习</p>
+    <div class="ri-block">
+      <h3>Trustworthy Artificial Intelligence</h3>
+      <p>Robust Machine Learning · Multimodal Reliability · Selective Prediction · Fault-Tolerant Learning</p>
+    </div>
 
-    <p class="ri-cat">智能环境监测与数字孪生</p>
-    <p class="ri-sub">城市空气质量智能预测 · 赛博物理系统可靠性分析 · 环境监测网络韧性评估</p>
+    <div class="ri-block">
+      <h3>AI for Environmental Intelligence</h3>
+      <p>Digital Twin · Cyber-Physical Systems · Spatio-Temporal Modeling · Environmental Monitoring Networks</p>
+    </div>
 
-    <p class="ri-cat">多模态人工智能可靠性</p>
-    <p class="ri-sub">视觉-语言模型 · 多模态错配检测 · 选择性预测与模型拒绝机制</p>
+    <div class="ri-block">
+      <h3>Data-Efficient Optimization</h3>
+      <p>Bayesian Optimization · Surrogate-Assisted Search · Multi-Objective Learning · Scarce-Data Regimes</p>
+    </div>
   </div>
 
   <hr />
@@ -229,27 +254,36 @@
     <h2>Selected Publications</h2>
 
     <div class="pub-item">
-      <span class="idx">[1]</span>
-      <span class="title">A Digital-Twin Decision-Support Framework for Air-Quality Monitoring Resilience under Simulated Station Outages</span>.
-      <strong>Yang Cao</strong> et al. <span class="venue">Working Paper</span>.
+      <p>
+        <span class="pub-author">Yang Cao.</span><br />
+        <span class="pub-title">Learning When Not to Bind: Independent Admission Gates for Multimodal Mismatch Rejection.</span><br />
+        <span class="pub-venue">Under Review.</span>
+      </p>
+      <p class="pub-links">
+        <a href="#">[PDF]</a><a href="#">[Code]</a>
+      </p>
     </div>
 
     <div class="pub-item">
-      <span class="idx">[2]</span>
-      <span class="title">Learning When Not to Bind: Independent Admission Gates for Multimodal Mismatch Rejection</span>.
-      <strong>Yang Cao</strong> et al. <span class="venue">Working Paper</span>.
+      <p>
+        <span class="pub-author">Yang Cao.</span><br />
+        <span class="pub-title">A Digital-Twin Decision-Support Framework for Air-Quality Monitoring Resilience under Simulated Station Outages.</span><br />
+        <span class="pub-venue">Working Paper.</span>
+      </p>
+      <p class="pub-links">
+        <a href="#">[PDF]</a>
+      </p>
     </div>
 
     <div class="pub-item">
-      <span class="idx">[3]</span>
-      <span class="title">Surrogate-Assisted Constrained Multi-Objective Optimization under Scarce Experimental Data</span>.
-      <strong>Yang Cao</strong> et al. <span class="venue">CCF Conference Submission</span>.
-    </div>
-
-    <div class="pub-item">
-      <span class="idx">[4]</span>
-      <span class="title">Masked-aware Robust Cyber-Physical Monitoring System for Urban Air Quality Networks</span>.
-      <strong>Yang Cao</strong> et al. <span class="venue">Working Paper</span>.
+      <p>
+        <span class="pub-author">Yang Cao.</span><br />
+        <span class="pub-title">Surrogate-Assisted Constrained Multi-Objective Optimization under Scarce Experimental Data.</span><br />
+        <span class="pub-venue">CCF Conference Submission.</span>
+      </p>
+      <p class="pub-links">
+        <a href="#">[PDF]</a><a href="#">[Code]</a>
+      </p>
     </div>
   </div>
 
@@ -257,76 +291,27 @@
 
   <!-- ===== Selected Research Projects ===== -->
   <div class="section">
-    <h2>Selected Research Projects</h2>
+    <h2>Selected Research</h2>
 
     <div class="project">
       <h3>Robust Environmental Intelligence via Digital Twin and AI</h3>
       <p class="proj-meta">First Author &nbsp;|&nbsp; Research Project</p>
-      <p>Developed a Digital Twin-based decision-support framework for urban air quality monitoring under sensor failures. Proposed a <strong>Mask-Aware Spatio-Temporal Model (MAST-AQ)</strong> integrating observation masks, graph-based spatial learning, and temporal modeling to enhance prediction robustness under missing monitoring stations.</p>
-      <ul>
-        <li>Built a fault-aware cyber-physical monitoring framework for urban environmental systems.</li>
-        <li>Designed robustness evaluation protocols under simulated station outages.</li>
-        <li>Achieved reliable PM<sub>2.5</sub> prediction under up to <strong>50% station failure</strong> scenarios.</li>
-      </ul>
+      <p class="proj-question">How can AI systems remain reliable when environmental observations become incomplete?</p>
+      <p>Proposed <strong>MAST-AQ</strong>, a mask-aware spatio-temporal model integrating observation masks, graph-based spatial learning, and temporal modeling. Built a fault-aware cyber-physical monitoring framework and achieved robust PM<sub>2.5</sub> prediction under up to <strong>50% station failure</strong> scenarios.</p>
     </div>
 
     <div class="project">
-      <h3>Learning When Not to Bind: Reliable Multimodal Learning under Semantic Mismatch</h3>
+      <h3>Learning When Not to Bind: Reliable Multimodal Learning</h3>
       <p class="proj-meta">First Author &nbsp;|&nbsp; Research Paper</p>
-      <p>Investigated the reliability issue of vision-language models under cross-modal semantic mismatch. Proposed an <strong>Independent Admission Gate</strong> mechanism that decouples feature relevance estimation from binding decisions, enabling models to selectively reject unreliable multimodal fusion.</p>
-      <ul>
-        <li>Introduced a magnitude-admission decomposition framework for selective multimodal binding.</li>
-        <li>Developed internal rejection signals for mismatch detection and uncertainty estimation.</li>
-        <li>Improved model reliability while preserving clean-sample retrieval performance.</li>
-      </ul>
+      <p class="proj-question">How should vision-language models decide when to refuse fusion rather than force it?</p>
+      <p>Proposed an <strong>Independent Admission Gate</strong> mechanism that decouples feature relevance estimation from binding decisions. Developed internal rejection signals for mismatch detection, improving model reliability while preserving clean-sample performance.</p>
     </div>
 
     <div class="project">
-      <h3>Surrogate-Assisted Constrained Multi-Objective Optimization with Scarce Data</h3>
+      <h3>Data-Efficient Multi-Objective Optimization under Scarce Data</h3>
       <p class="proj-meta">First Author &nbsp;|&nbsp; CCF Conference Submission</p>
-      <p>Studied multi-objective optimization problems under limited experimental data and expensive evaluations. Developed a surrogate-assisted optimization framework combining <strong>Gaussian Process</strong> modeling and evolutionary Pareto search.</p>
-      <ul>
-        <li>Designed a data-efficient optimization pipeline for constrained black-box problems.</li>
-        <li>Integrated surrogate modeling with multi-objective evolutionary optimization.</li>
-        <li>Enabled efficient decision exploration with limited observations.</li>
-      </ul>
-    </div>
-
-    <div class="project">
-      <h3>Solar-Powered Electrochemical Nitrogen Removal for Smart Agriculture</h3>
-      <p class="proj-meta">Research Member &nbsp;|&nbsp; Undergraduate Innovation Project</p>
-      <p>Designed a low-carbon electrochemical treatment system for agricultural wastewater remediation by integrating <strong>solar energy supply, pulse electrolysis, and NiFe-LDH catalytic electrodes</strong>.</p>
-      <ul>
-        <li>Developed a solar-driven nitrate removal prototype.</li>
-        <li>Evaluated energy efficiency and carbon reduction potential.</li>
-        <li>Explored sustainable solutions for smart agriculture and environmental management.</li>
-      </ul>
-    </div>
-
-    <p style="margin-top:16px; font-style:italic; color:#444; text-align:center;">
-      Building reliable and sustainable intelligent systems through AI, optimization, and environmental technologies.
-    </p>
-  </div>
-
-  <hr />
-
-  <!-- ===== Technical Skills ===== -->
-  <div class="section">
-    <h2>Technical Skills</h2>
-
-    <div class="skill-block">
-      <p class="skill-title">人工智能模型设计</p>
-      <p class="skill-list">深度学习模型构建 · Transformer / GRU / GNN 等模型应用 · 多模态模型可靠性研究</p>
-    </div>
-
-    <div class="skill-block">
-      <p class="skill-title">数据与实验能力</p>
-      <p class="skill-list">多源数据处理 · 实验协议设计 · 模型对比与消融分析 · 科研论文实验复现</p>
-    </div>
-
-    <div class="skill-block">
-      <p class="skill-title">交叉研究能力</p>
-      <p class="skill-list">人工智能 + 环境科学 + 数字孪生 + 可信计算 — 开展面向真实场景的智能系统研究</p>
+      <p class="proj-question">How can we optimize complex systems when experiments are expensive and data is scarce?</p>
+      <p>Developed a surrogate-assisted optimization framework combining <strong>Gaussian Process</strong> modeling with evolutionary Pareto search, enabling efficient decision exploration with limited observations.</p>
     </div>
   </div>
 
@@ -335,8 +320,8 @@
   <!-- ===== Education ===== -->
   <div class="section">
     <h2>Education</h2>
-    <p><strong>湘潭大学</strong> — 环境工程专业，本科（在读）<br />
-    <span style="font-size:13px;color:#555;">Xiangtan University, B.Eng. in Environmental Engineering</span></p>
+    <p><strong>Xiangtan University</strong> — B.Eng. in Environmental Engineering (In Progress)<br />
+    <span style="font-size:13px;color:#555;">湘潭大学 · 环境工程 · 本科在读</span></p>
   </div>
 
   <hr />
@@ -344,7 +329,8 @@
   <!-- ===== Footer ===== -->
   <div class="footer">
     <p class="update">Last updated: July 2026</p>
-    <p>&copy; 2026 曹阳. Hosted on <a href="https://pages.github.com/">GitHub Pages</a>.</p>
+    <p>&copy; 2026 Yang Cao. Hosted on <a href="https://pages.github.com/">GitHub Pages</a>.</p>
+    <p class="gold-line">Building reliable and sustainable intelligent systems through AI, optimization, and environmental technologies.</p>
   </div>
 
 </body>
