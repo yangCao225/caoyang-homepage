@@ -231,91 +231,81 @@
     <div class="pub-item">
       <span class="idx">[1]</span>
       <span class="title">A Digital-Twin Decision-Support Framework for Air-Quality Monitoring Resilience under Simulated Station Outages</span>.
-      <strong>Yang Cao</strong> et al.<br />
-      <span class="venue">Working Paper</span>.
+      <strong>Yang Cao</strong> et al. <span class="venue">Working Paper</span>.
     </div>
 
     <div class="pub-item">
       <span class="idx">[2]</span>
       <span class="title">Learning When Not to Bind: Independent Admission Gates for Multimodal Mismatch Rejection</span>.
-      <strong>Yang Cao</strong> et al.<br />
-      <span class="venue">Working Paper</span>.
+      <strong>Yang Cao</strong> et al. <span class="venue">Working Paper</span>.
     </div>
 
     <div class="pub-item">
       <span class="idx">[3]</span>
       <span class="title">Surrogate-Assisted Constrained Multi-Objective Optimization under Scarce Experimental Data</span>.
-      <strong>Yang Cao</strong> et al.<br />
-      <span class="venue">Working Paper</span>.
+      <strong>Yang Cao</strong> et al. <span class="venue">CCF Conference Submission</span>.
+    </div>
+
+    <div class="pub-item">
+      <span class="idx">[4]</span>
+      <span class="title">Masked-aware Robust Cyber-Physical Monitoring System for Urban Air Quality Networks</span>.
+      <strong>Yang Cao</strong> et al. <span class="venue">Working Paper</span>.
     </div>
   </div>
 
   <hr />
 
-  <!-- ===== Research Projects ===== -->
+  <!-- ===== Selected Research Projects ===== -->
   <div class="section">
-    <h2>Research Projects</h2>
+    <h2>Selected Research Projects</h2>
 
-    <!-- Project 1 -->
     <div class="project">
-      <h3>1. 面向城市空气质量监测网络故障的掩码感知鲁棒监测系统</h3>
-      <p class="proj-en">Masked-aware Robust Cyber-Physical Monitoring System for Urban Air Quality Networks</p>
-      <p class="proj-meta">项目类型：自主科研项目</p>
-
-      <p><strong>项目简介：</strong>针对城市空气质量监测网络中传感器离线、通信异常及设备故障导致的数据缺失问题，设计面向故障场景的智能预测与监测方案。提出<strong>掩码感知时空预测模型（MAST-AQ）</strong>，将监测站点可观测状态作为额外输入，融合时间动态与空间关联，提高部分监测站失效情况下的持续运行能力。</p>
-
-      <p class="proj-label">技术路线</p>
-      <p>数据采集与清洗 → 异常检测与观测掩码构建 → 站点空间图建模 → 掩码感知时空融合 → PM<sub>2.5</sub>预测 → 故障鲁棒性评估</p>
-      <p><strong>核心方法：</strong>Observation Mask故障状态编码 · GRU时间序列建模 · 图消息传播空间信息融合 · 整站失效模拟评估系统可靠性</p>
-
-      <p class="proj-label">研究成果</p>
-      <p>基于北京多站点空气质量数据集，构建10%、30%、<strong>50%</strong>监测站整体失效测试协议；在<strong>50%站点失效</strong>情况下，MAST-AQ取得 <strong>MAE = 17.01</strong>，相比传统LSTM（MAE = 35.15）显著降低预测误差，验证了高故障率环境下的预测连续性与可靠性。</p>
+      <h3>Robust Environmental Intelligence via Digital Twin and AI</h3>
+      <p class="proj-meta">First Author &nbsp;|&nbsp; Research Project</p>
+      <p>Developed a Digital Twin-based decision-support framework for urban air quality monitoring under sensor failures. Proposed a <strong>Mask-Aware Spatio-Temporal Model (MAST-AQ)</strong> integrating observation masks, graph-based spatial learning, and temporal modeling to enhance prediction robustness under missing monitoring stations.</p>
+      <ul>
+        <li>Built a fault-aware cyber-physical monitoring framework for urban environmental systems.</li>
+        <li>Designed robustness evaluation protocols under simulated station outages.</li>
+        <li>Achieved reliable PM<sub>2.5</sub> prediction under up to <strong>50% station failure</strong> scenarios.</li>
+      </ul>
     </div>
 
-    <!-- Project 2 -->
     <div class="project">
-      <h3>2. 面向模拟监测站故障的城市空气质量监测韧性数字孪生决策支持框架</h3>
-      <p class="proj-en">A Digital-Twin Decision-Support Framework for Air-Quality Monitoring Resilience under Simulated Station Outages</p>
-      <p class="proj-meta">成果类型：科研论文 &nbsp;|&nbsp; 角色：第一作者</p>
-
-      <p><strong>项目简介：</strong>针对城市环境监测网络受设备故障、通信异常等影响导致预测可靠性下降的问题，构建融合<strong>数字孪生、人工智能预测和故障模拟分析</strong>的监测韧性评价框架。通过历史多站点数据与可控故障模拟，实现监测网络状态同步、故障情景推演和预测性能评价。</p>
-
-      <p class="proj-label">个人承担工作</p>
-      <p>研究方案设计 · 技术路线规划 · 空气质量数据整理与预处理 · 数字孪生系统构建 · 模型算法设计与实现 · 故障模拟实验 · 论文撰写与成果整理</p>
-
-      <p class="proj-label">研究结果</p>
-      <p>在50%监测站模拟失效条件下，模型保持较好预测性能；通过消融实验验证<strong>观测掩码机制</strong>和<strong>空间图融合机制</strong>对提升系统韧性的关键作用；建立了"故障模拟—预测响应—风险评价"的智能环境监测闭环框架。</p>
+      <h3>Learning When Not to Bind: Reliable Multimodal Learning under Semantic Mismatch</h3>
+      <p class="proj-meta">First Author &nbsp;|&nbsp; Research Paper</p>
+      <p>Investigated the reliability issue of vision-language models under cross-modal semantic mismatch. Proposed an <strong>Independent Admission Gate</strong> mechanism that decouples feature relevance estimation from binding decisions, enabling models to selectively reject unreliable multimodal fusion.</p>
+      <ul>
+        <li>Introduced a magnitude-admission decomposition framework for selective multimodal binding.</li>
+        <li>Developed internal rejection signals for mismatch detection and uncertainty estimation.</li>
+        <li>Improved model reliability while preserving clean-sample retrieval performance.</li>
+      </ul>
     </div>
 
-    <!-- Project 3 -->
     <div class="project">
-      <h3>3. 多模态错配拒绝与可信视觉语言模型研究</h3>
-      <p class="proj-en">Learning When Not to Bind: Independent Admission Gates for Multimodal Mismatch Rejection</p>
-      <p class="proj-meta">成果类型：科研论文</p>
-
-      <p><strong>研究背景：</strong>针对视觉-语言模型在图像与文本语义不一致情况下仍强制融合信息，导致错误绑定和模型过度自信的问题。提出核心思想：<em>"模型不仅需要知道什么时候融合，也需要知道什么时候拒绝融合。"</em></p>
-
-      <p class="proj-label">核心方法</p>
-      <p>提出<strong>相关性提议—独立准入判断</strong>（Relevance Proposal + Independent Admission Decision）框架：冻结CLIP视觉语言特征 → 设计独立准入门控模块 → 将匹配判断与融合决策解耦 → 构建拒绝学习目标。</p>
-
-      <p class="proj-label">个人工作</p>
-      <p>研究问题定义 · 方法设计 · 模型实现（CLIP ViT-B/32冻结训练框架） · 实验协议搭建 · 多类准入门控机制 · 未见错配测试协议 · 风险-覆盖率分析 · 消融实验设计 · 论文撰写</p>
-
-      <p class="proj-label">研究成果</p>
-      <p>独立准入机制有效提升模型对未知错配样本的拒绝能力；相位准入机制融合内部信号实现 <strong>AUROC = 0.960</strong>；构建了面向可信多模态模型的选择性预测方法。</p>
+      <h3>Surrogate-Assisted Constrained Multi-Objective Optimization with Scarce Data</h3>
+      <p class="proj-meta">First Author &nbsp;|&nbsp; CCF Conference Submission</p>
+      <p>Studied multi-objective optimization problems under limited experimental data and expensive evaluations. Developed a surrogate-assisted optimization framework combining <strong>Gaussian Process</strong> modeling and evolutionary Pareto search.</p>
+      <ul>
+        <li>Designed a data-efficient optimization pipeline for constrained black-box problems.</li>
+        <li>Integrated surrogate modeling with multi-objective evolutionary optimization.</li>
+        <li>Enabled efficient decision exploration with limited observations.</li>
+      </ul>
     </div>
 
-    <!-- Project 4 -->
     <div class="project">
-      <h3>4. 约束条件下多目标优化研究</h3>
-      <p class="proj-en">Surrogate-Assisted Constrained Multi-Objective Optimization under Scarce Experimental Data</p>
-      <p class="proj-meta">成果类型：科研论文</p>
-
-      <p><strong>研究方向：</strong>面向实验数据稀缺、高成本黑箱优化问题，研究基于<strong>代理模型辅助的约束多目标优化</strong>方法。主要关注高斯过程代理模型、多目标优化、Pareto前沿搜索与小样本实验设计。</p>
-
-      <p class="proj-label">技术路线</p>
-      <p>代理模型预测 → 约束优化搜索 → Pareto候选生成 → 实验验证反馈。用于降低昂贵实验过程中的试错成本。</p>
+      <h3>Solar-Powered Electrochemical Nitrogen Removal for Smart Agriculture</h3>
+      <p class="proj-meta">Research Member &nbsp;|&nbsp; Undergraduate Innovation Project</p>
+      <p>Designed a low-carbon electrochemical treatment system for agricultural wastewater remediation by integrating <strong>solar energy supply, pulse electrolysis, and NiFe-LDH catalytic electrodes</strong>.</p>
+      <ul>
+        <li>Developed a solar-driven nitrate removal prototype.</li>
+        <li>Evaluated energy efficiency and carbon reduction potential.</li>
+        <li>Explored sustainable solutions for smart agriculture and environmental management.</li>
+      </ul>
     </div>
+
+    <p style="margin-top:16px; font-style:italic; color:#444; text-align:center;">
+      Building reliable and sustainable intelligent systems through AI, optimization, and environmental technologies.
+    </p>
   </div>
 
   <hr />
