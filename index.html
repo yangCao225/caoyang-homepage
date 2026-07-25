@@ -195,18 +195,15 @@
     }
 
     .hero-avatar {
-      width: 96px;
-      height: 96px;
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
-      background: var(--color-accent-gradient);
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      object-fit: cover;
+      display: block;
       margin: 0 auto 24px;
-      font-size: 38px;
-      color: #fff;
       box-shadow: 0 8px 32px rgba(99, 102, 241, 0.25);
       transition: transform 0.3s ease;
+      border: 3px solid #fff;
     }
 
     .hero-avatar:hover {
@@ -452,7 +449,7 @@
       }
 
       .hero h1 { font-size: 28px; }
-      .hero-avatar { width: 80px; height: 80px; font-size: 30px; }
+      .hero-avatar { width: 96px; height: 96px; }
 
       .contact-grid {
         grid-template-columns: 1fr;
@@ -492,7 +489,7 @@
 
     <!-- Hero -->
     <section class="section hero" id="hero" aria-label="首页">
-      <div class="hero-avatar" aria-hidden="true">曹</div>
+      <img class="hero-avatar" src="证件照.jpg" alt="曹阳的照片" width="96" height="96">
       <h1>曹阳</h1>
       <p class="hero-tagline">湘潭大学 · 环境工程专业</p>
       <div class="hero-divider"></div>
