@@ -3,33 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="曹阳 — 湘潭大学环境工程专业，个人学术主页。研究方向、教育背景、科研成果。">
-  <meta name="keywords" content="曹阳,湘潭大学,环境工程,学术主页,科研">
-  <meta name="author" content="曹阳">
+  <meta name="description" content="曹阳 — 湘潭大学环境工程专业。研究方向：人工智能、机器学习、智能环境监测、多模态可信AI。" />
+  <meta name="keywords" content="曹阳,湘潭大学,环境工程,人工智能,机器学习,智能环境监测,多模态,可信AI,数字孪生" />
+  <meta name="author" content="曹阳" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="曹阳 · 湘潭大学 · 环境工程">
-  <meta property="og:description" content="个人学术主页 — Research Interests, Education, Publications">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="zh_CN">
+  <meta property="og:title" content="曹阳 · 湘潭大学 · 环境工程" />
+  <meta property="og:description" content="Research Interests: AI, ML, Intelligent Environmental Monitoring, Multimodal Trustworthy AI" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="zh_CN" />
 
   <title>曹阳 — 湘潭大学 · 环境工程</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>" />
 
   <style>
-    /* ===== Reset ===== */
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
-    /* ===== Typography ===== */
     body {
       font-family: Arial, Helvetica, "Microsoft YaHei", "PingFang SC", sans-serif;
       font-size: 14px;
-      line-height: 1.65;
+      line-height: 1.7;
       color: #000;
       background: #fff;
-      max-width: 860px;
+      max-width: 880px;
       margin: 0 auto;
-      padding: 24px 32px 48px;
+      padding: 28px 36px 52px;
     }
 
     h1, h2, h3 {
@@ -37,34 +34,28 @@
       font-weight: 700;
       color: #000;
     }
-
-    h1 { font-size: 26px; }
+    h1 { font-size: 27px; }
     h2 { font-size: 18px; margin-bottom: 10px; }
     h3 { font-size: 15px; margin-bottom: 4px; }
 
-    a {
-      color: #003399;
-      text-decoration: underline;
-    }
+    a { color: #003399; text-decoration: underline; }
     a:hover { color: #001166; }
     a:visited { color: #551a8b; }
 
-    /* ===== Horizontal Rule ===== */
     hr {
       border: none;
       border-top: 1px solid #000;
-      margin: 20px 0;
-      opacity: 0.4;
+      margin: 22px 0;
+      opacity: 0.35;
     }
 
-    /* ===== Header / Identity Section ===== */
+    /* Identity */
     .identity {
       display: flex;
       align-items: flex-start;
       gap: 28px;
-      margin-bottom: 16px;
+      margin-bottom: 18px;
     }
-
     .identity-photo {
       width: 130px;
       height: 170px;
@@ -72,165 +63,109 @@
       border: 1px solid #ccc;
       flex-shrink: 0;
     }
-
-    .identity-info h1 {
-      font-size: 28px;
-      margin-bottom: 2px;
-    }
-
+    .identity-info h1 { font-size: 28px; margin-bottom: 4px; }
     .identity-info .name-en {
       font-family: Georgia, "Times New Roman", serif;
       font-size: 17px;
       color: #444;
       margin-bottom: 10px;
     }
+    .identity-info .title   { font-size: 14px; margin-bottom: 4px; }
+    .identity-info .dept    { font-size: 14px; color: #333; margin-bottom: 4px; }
+    .identity-info .univ    { font-size: 14px; color: #003399; font-weight: 600; }
 
-    .identity-info .title {
-      font-size: 14px;
-      margin-bottom: 4px;
-    }
-
-    .identity-info .dept {
-      font-size: 14px;
-      color: #333;
-      margin-bottom: 4px;
-    }
-
-    .identity-info .univ {
-      font-size: 14px;
-      color: #003399;
-      font-weight: 600;
-    }
-
-    /* ===== Contact Info ===== */
+    /* Contact line */
     .contact-line {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px 32px;
+      gap: 6px 32px;
       font-size: 13px;
-      line-height: 1.8;
+      line-height: 1.9;
     }
+    .contact-line .label { font-weight: 600; }
 
-    .contact-line .label {
+    /* Section */
+    .section { margin-bottom: 6px; }
+    .section p  { font-size: 14px; line-height: 1.7; margin-bottom: 6px; }
+    .section ul { list-style: disc; padding-left: 22px; margin-bottom: 8px; }
+    .section li { margin-bottom: 4px; line-height: 1.65; }
+
+    /* Research interest categories */
+    .ri-cat {
       font-weight: 600;
+      margin-top: 8px;
+      margin-bottom: 2px;
+    }
+    .ri-sub {
+      margin-left: 16px;
+      margin-bottom: 4px;
+      color: #222;
     }
 
-    /* ===== Section ===== */
-    .section {
-      margin-bottom: 8px;
-    }
-
-    .section p,
-    .section li {
-      font-size: 14px;
-      line-height: 1.7;
-      margin-bottom: 6px;
-    }
-
-    .section ul {
-      list-style: disc;
-      padding-left: 20px;
-      margin-bottom: 8px;
-    }
-
-    .section ul li {
-      margin-bottom: 5px;
-    }
-
-    /* ===== Education Table ===== */
-    .edu-table {
-      width: 100%;
-      font-size: 14px;
-      line-height: 1.8;
-    }
-
-    .edu-table td {
-      vertical-align: top;
-      padding: 3px 8px 3px 0;
-    }
-
-    .edu-table .year {
-      white-space: nowrap;
-      font-weight: 600;
-      width: 100px;
-    }
-
-    /* ===== Publications ===== */
+    /* Publication */
     .pub-item {
-      margin-bottom: 12px;
-      padding-left: 22px;
-      text-indent: -22px;
-      font-size: 14px;
-      line-height: 1.7;
-    }
-
-    .pub-item .pub-index {
-      font-weight: 600;
-    }
-
-    .pub-item .pub-title {
-      font-weight: 600;
-    }
-
-    .pub-item .pub-journal {
-      font-style: italic;
-      color: #333;
-    }
-
-    .pub-item .pub-year {
-      color: #555;
-    }
-
-    /* ===== Projects ===== */
-    .project-item {
       margin-bottom: 10px;
+      padding-left: 24px;
+      text-indent: -24px;
+      line-height: 1.65;
     }
+    .pub-item .idx   { font-weight: 600; }
+    .pub-item .title { font-weight: 600; }
+    .pub-item .venue { font-style: italic; color: #333; }
+    .pub-item .year  { color: #555; }
 
-    .project-item .project-name {
-      font-weight: 600;
+    /* Project */
+    .project {
+      margin-bottom: 22px;
+      padding-left: 16px;
+      border-left: 2px solid #003399;
     }
-
-    /* ===== Footer ===== */
-    .footer {
-      margin-top: 28px;
-      font-size: 12px;
-      color: #777;
-    }
-
-    .footer .update {
+    .project h3 { font-size: 15px; margin-bottom: 6px; }
+    .project .proj-en {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 13px;
+      color: #444;
+      margin-bottom: 8px;
       font-style: italic;
     }
-
-    /* ===== Responsive ===== */
-    @media (max-width: 640px) {
-      body {
-        padding: 16px 16px 36px;
-      }
-
-      .identity {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 16px;
-      }
-
-      .identity-photo {
-        width: 110px;
-        height: 145px;
-      }
-
-      .identity-info h1 { font-size: 24px; }
-
-      h1 { font-size: 22px; }
-      h2 { font-size: 17px; }
-
-      .contact-line {
-        flex-direction: column;
-        gap: 2px;
-      }
+    .project .proj-meta {
+      font-size: 13px;
+      color: #555;
+      margin-bottom: 8px;
+    }
+    .project .proj-label {
+      font-weight: 600;
+      font-size: 13px;
+      margin-top: 8px;
+      margin-bottom: 2px;
+    }
+    .project .highlight {
+      background: #f5f5dc;
+      padding: 2px 6px;
+      font-size: 13px;
     }
 
-    /* ===== Print ===== */
+    /* Skills */
+    .skill-block { margin-bottom: 10px; }
+    .skill-block .skill-title { font-weight: 600; }
+    .skill-list { color: #222; }
+
+    /* Footer */
+    .footer { margin-top: 28px; font-size: 12px; color: #777; }
+    .footer .update { font-style: italic; }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      body { padding: 14px 14px 36px; }
+      .identity { flex-direction: column; align-items: center; text-align: center; gap: 14px; }
+      .identity-photo { width: 110px; height: 145px; }
+      .identity-info h1 { font-size: 23px; }
+      h1 { font-size: 21px; }
+      h2 { font-size: 17px; }
+      .contact-line { flex-direction: column; gap: 1px; }
+      .project { padding-left: 10px; }
+    }
+
     @media print {
       body { padding: 0; max-width: 100%; }
       a { color: #000; text-decoration: none; }
@@ -241,7 +176,7 @@
 
   <!-- ===== Identity ===== -->
   <div class="identity">
-    <img class="identity-photo" src="证件照.jpg" alt="曹阳" width="130" height="170">
+    <img class="identity-photo" src="证件照.jpg" alt="曹阳" width="130" height="170" />
     <div class="identity-info">
       <h1>曹阳</h1>
       <p class="name-en">Yang Cao</p>
@@ -251,7 +186,7 @@
     </div>
   </div>
 
-  <hr>
+  <hr />
 
   <!-- ===== Contact ===== -->
   <div class="contact-line">
@@ -260,68 +195,151 @@
     <span><span class="label">Tel:</span> 17663231569</span>
   </div>
 
-  <hr>
+  <hr />
 
   <!-- ===== Research Interests ===== -->
   <div class="section">
     <h2>Research Interests</h2>
-    <ul>
-      <li>环境监测与数据分析</li>
-      <li>水污染控制技术</li>
-      <li>环境可持续发展</li>
-      <li>环境影响评价</li>
-    </ul>
+    <p>围绕<strong>人工智能、机器学习、智能环境监测、多模态学习与可信人工智能</strong>开展科研工作，关注复杂环境与开放场景下智能模型的鲁棒性、可靠性与决策能力。</p>
+
+    <p class="ri-cat">机器学习与深度学习</p>
+    <p class="ri-sub">时空预测模型 · 图神经网络 · 鲁棒学习与故障容错学习</p>
+
+    <p class="ri-cat">智能环境监测与数字孪生</p>
+    <p class="ri-sub">城市空气质量智能预测 · 赛博物理系统可靠性分析 · 环境监测网络韧性评估</p>
+
+    <p class="ri-cat">多模态人工智能可靠性</p>
+    <p class="ri-sub">视觉-语言模型 · 多模态错配检测 · 选择性预测与模型拒绝机制</p>
   </div>
 
-  <hr>
+  <hr />
 
-  <!-- ===== Education ===== -->
+  <!-- ===== Selected Publications ===== -->
   <div class="section">
-    <h2>Education</h2>
-    <table class="edu-table">
-      <tr>
-        <td class="year">在读</td>
-        <td>
-          <strong>湘潭大学</strong> — 环境工程专业，本科<br>
-          <span style="font-size:13px;color:#555;">Xiangtan University, B.Eng. in Environmental Engineering</span>
-        </td>
-      </tr>
-    </table>
-  </div>
+    <h2>Selected Publications</h2>
 
-  <hr>
-
-  <!-- ===== Publications ===== -->
-  <div class="section">
-    <h2>Publications</h2>
-    <p style="color:#555; font-style:italic;">（科研成果待补充 — 请将论文信息发给我更新）</p>
-    <!--
-    格式示例：
     <div class="pub-item">
-      [1] <span class="pub-title">论文标题</span>.
-      作者列表.
-      <span class="pub-journal">期刊名称</span>,
-      <span class="pub-year">2025</span>.
+      <span class="idx">[1]</span>
+      <span class="title">A Digital-Twin Decision-Support Framework for Air-Quality Monitoring Resilience under Simulated Station Outages</span>.
+      <strong>Yang Cao</strong> et al.<br />
+      <span class="venue">Working Paper</span>.
     </div>
-    -->
+
+    <div class="pub-item">
+      <span class="idx">[2]</span>
+      <span class="title">Learning When Not to Bind: Independent Admission Gates for Multimodal Mismatch Rejection</span>.
+      <strong>Yang Cao</strong> et al.<br />
+      <span class="venue">Working Paper</span>.
+    </div>
+
+    <div class="pub-item">
+      <span class="idx">[3]</span>
+      <span class="title">Surrogate-Assisted Constrained Multi-Objective Optimization under Scarce Experimental Data</span>.
+      <strong>Yang Cao</strong> et al.<br />
+      <span class="venue">Working Paper</span>.
+    </div>
   </div>
 
-  <hr>
+  <hr />
 
   <!-- ===== Research Projects ===== -->
   <div class="section">
     <h2>Research Projects</h2>
-    <p style="color:#555; font-style:italic;">（项目经历待补充 — 请将项目信息发给我更新）</p>
-    <!--
-    格式示例：
-    <div class="project-item">
-      <p><span class="project-name">项目名称</span> — 项目来源/基金</p>
-      <p>主要工作：...</p>
+
+    <!-- Project 1 -->
+    <div class="project">
+      <h3>1. 面向城市空气质量监测网络故障的掩码感知鲁棒监测系统</h3>
+      <p class="proj-en">Masked-aware Robust Cyber-Physical Monitoring System for Urban Air Quality Networks</p>
+      <p class="proj-meta">项目类型：自主科研项目</p>
+
+      <p><strong>项目简介：</strong>针对城市空气质量监测网络中传感器离线、通信异常及设备故障导致的数据缺失问题，设计面向故障场景的智能预测与监测方案。提出<strong>掩码感知时空预测模型（MAST-AQ）</strong>，将监测站点可观测状态作为额外输入，融合时间动态与空间关联，提高部分监测站失效情况下的持续运行能力。</p>
+
+      <p class="proj-label">技术路线</p>
+      <p>数据采集与清洗 → 异常检测与观测掩码构建 → 站点空间图建模 → 掩码感知时空融合 → PM<sub>2.5</sub>预测 → 故障鲁棒性评估</p>
+      <p><strong>核心方法：</strong>Observation Mask故障状态编码 · GRU时间序列建模 · 图消息传播空间信息融合 · 整站失效模拟评估系统可靠性</p>
+
+      <p class="proj-label">研究成果</p>
+      <p>基于北京多站点空气质量数据集，构建10%、30%、<strong>50%</strong>监测站整体失效测试协议；在<strong>50%站点失效</strong>情况下，MAST-AQ取得 <strong>MAE = 17.01</strong>，相比传统LSTM（MAE = 35.15）显著降低预测误差，验证了高故障率环境下的预测连续性与可靠性。</p>
     </div>
-    -->
+
+    <!-- Project 2 -->
+    <div class="project">
+      <h3>2. 面向模拟监测站故障的城市空气质量监测韧性数字孪生决策支持框架</h3>
+      <p class="proj-en">A Digital-Twin Decision-Support Framework for Air-Quality Monitoring Resilience under Simulated Station Outages</p>
+      <p class="proj-meta">成果类型：科研论文 &nbsp;|&nbsp; 角色：第一作者</p>
+
+      <p><strong>项目简介：</strong>针对城市环境监测网络受设备故障、通信异常等影响导致预测可靠性下降的问题，构建融合<strong>数字孪生、人工智能预测和故障模拟分析</strong>的监测韧性评价框架。通过历史多站点数据与可控故障模拟，实现监测网络状态同步、故障情景推演和预测性能评价。</p>
+
+      <p class="proj-label">个人承担工作</p>
+      <p>研究方案设计 · 技术路线规划 · 空气质量数据整理与预处理 · 数字孪生系统构建 · 模型算法设计与实现 · 故障模拟实验 · 论文撰写与成果整理</p>
+
+      <p class="proj-label">研究结果</p>
+      <p>在50%监测站模拟失效条件下，模型保持较好预测性能；通过消融实验验证<strong>观测掩码机制</strong>和<strong>空间图融合机制</strong>对提升系统韧性的关键作用；建立了"故障模拟—预测响应—风险评价"的智能环境监测闭环框架。</p>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project">
+      <h3>3. 多模态错配拒绝与可信视觉语言模型研究</h3>
+      <p class="proj-en">Learning When Not to Bind: Independent Admission Gates for Multimodal Mismatch Rejection</p>
+      <p class="proj-meta">成果类型：科研论文</p>
+
+      <p><strong>研究背景：</strong>针对视觉-语言模型在图像与文本语义不一致情况下仍强制融合信息，导致错误绑定和模型过度自信的问题。提出核心思想：<em>"模型不仅需要知道什么时候融合，也需要知道什么时候拒绝融合。"</em></p>
+
+      <p class="proj-label">核心方法</p>
+      <p>提出<strong>相关性提议—独立准入判断</strong>（Relevance Proposal + Independent Admission Decision）框架：冻结CLIP视觉语言特征 → 设计独立准入门控模块 → 将匹配判断与融合决策解耦 → 构建拒绝学习目标。</p>
+
+      <p class="proj-label">个人工作</p>
+      <p>研究问题定义 · 方法设计 · 模型实现（CLIP ViT-B/32冻结训练框架） · 实验协议搭建 · 多类准入门控机制 · 未见错配测试协议 · 风险-覆盖率分析 · 消融实验设计 · 论文撰写</p>
+
+      <p class="proj-label">研究成果</p>
+      <p>独立准入机制有效提升模型对未知错配样本的拒绝能力；相位准入机制融合内部信号实现 <strong>AUROC = 0.960</strong>；构建了面向可信多模态模型的选择性预测方法。</p>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project">
+      <h3>4. 约束条件下多目标优化研究</h3>
+      <p class="proj-en">Surrogate-Assisted Constrained Multi-Objective Optimization under Scarce Experimental Data</p>
+      <p class="proj-meta">成果类型：科研论文</p>
+
+      <p><strong>研究方向：</strong>面向实验数据稀缺、高成本黑箱优化问题，研究基于<strong>代理模型辅助的约束多目标优化</strong>方法。主要关注高斯过程代理模型、多目标优化、Pareto前沿搜索与小样本实验设计。</p>
+
+      <p class="proj-label">技术路线</p>
+      <p>代理模型预测 → 约束优化搜索 → Pareto候选生成 → 实验验证反馈。用于降低昂贵实验过程中的试错成本。</p>
+    </div>
   </div>
 
-  <hr>
+  <hr />
+
+  <!-- ===== Technical Skills ===== -->
+  <div class="section">
+    <h2>Technical Skills</h2>
+
+    <div class="skill-block">
+      <p class="skill-title">人工智能模型设计</p>
+      <p class="skill-list">深度学习模型构建 · Transformer / GRU / GNN 等模型应用 · 多模态模型可靠性研究</p>
+    </div>
+
+    <div class="skill-block">
+      <p class="skill-title">数据与实验能力</p>
+      <p class="skill-list">多源数据处理 · 实验协议设计 · 模型对比与消融分析 · 科研论文实验复现</p>
+    </div>
+
+    <div class="skill-block">
+      <p class="skill-title">交叉研究能力</p>
+      <p class="skill-list">人工智能 + 环境科学 + 数字孪生 + 可信计算 — 开展面向真实场景的智能系统研究</p>
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- ===== Education ===== -->
+  <div class="section">
+    <h2>Education</h2>
+    <p><strong>湘潭大学</strong> — 环境工程专业，本科（在读）<br />
+    <span style="font-size:13px;color:#555;">Xiangtan University, B.Eng. in Environmental Engineering</span></p>
+  </div>
+
+  <hr />
 
   <!-- ===== Footer ===== -->
   <div class="footer">
